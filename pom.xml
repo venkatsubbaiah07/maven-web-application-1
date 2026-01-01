@@ -113,7 +113,16 @@
 		<finalName>maven-web-application</finalName>
 		
 		<plugins>
-			<plugin>
+		  <pluginManagement>
+   		    <plugins>
+               <plugin>
+                  <groupId>org.sonarsource.scanner.maven</groupId>
+                  <artifactId>sonar-maven-plugin</artifactId>
+                  <version>5.0.0.4389</version> <!-- Use the current 2026 version -->
+               </plugin>
+            </plugins>
+          </pluginManagement>
+		<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
